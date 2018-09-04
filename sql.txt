@@ -1,0 +1,36 @@
+SQL
+
+create database test;
+
+create table person(
+	ip varchar(40) NOT NULL,
+	id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(32),
+	gender varchar(10),
+	age int,
+	hight int,
+	weight int,
+	wearposition varchar(40)
+);
+insert into person values('1.1.1',default,'iHan','男',20,165,100,'wrist');
+
+// table = id + property
+create table 1heartrate(      
+	time timestamp,
+	heartrate int(11)
+);
+
+
+
+
+注册登录
+
+create table user (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  username varchar(32) NOT NULL,
+  password varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into user values(default,'admin','admin');
+
+
